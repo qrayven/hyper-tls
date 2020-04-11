@@ -17,8 +17,11 @@ vendored = ["native-tls/vendored"]
 bytes = "0.5"
 native-tls = { git = "https://github.com/qrayven/rust-native-tls", branch = "custom-cipherlist"}
 hyper = { version = "0.13", default-features = false, features = ["tcp"] }
-tokio = { version = "0.2" }
-tokio-tls = "0.3"
+tokio = { git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist"}
+#tokio = { version = "0.2" }
+tokio-tls = { git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist"}
+#tokio-tls = "0.3"
 
 [dev-dependencies]
-tokio = { version = "0.2", features = ["io-std", "macros"] }
+tokio = { git = "https://github.com/qrayven/tokio", branch = "custom-cipherlist", features = ["io-std", "macros"]}
+#tokio = { version = "0.2", features = ["io-std", "macros"] }
